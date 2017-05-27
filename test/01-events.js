@@ -1,4 +1,5 @@
-var helper = require("./test-helper.js");
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var helper = require("htmlparser2/test-helper.js");
 
 helper.mochaTest("Events", __dirname, function(test, cb){
 	helper.writeToParser(
@@ -7,3 +8,5 @@ helper.mochaTest("Events", __dirname, function(test, cb){
 		test.html
 	);
 });
+
+return module.exports;});

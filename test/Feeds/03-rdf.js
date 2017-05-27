@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 exports.name = "RDF test";
 exports.file = "/RDF_Example.xml";
 exports.expected = {
@@ -18,3 +19,5 @@ exports.expected = {
 		}
 	]
 };
+
+return module.exports;});

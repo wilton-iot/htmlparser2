@@ -1,6 +1,7 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 //Runs tests for feeds
 
-var helper = require("./test-helper.js"),
+var helper = require("htmlparser2/test-helper.js"),
     FeedHandler = require("..").RssHandler,
     fs = require("fs"),
     path = require("path");
@@ -17,3 +18,5 @@ helper.mochaTest("Feeds", __dirname, function(test, cb){
 		}
 	);
 });
+
+return module.exports;});

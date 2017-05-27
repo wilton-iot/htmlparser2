@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 exports.name = "RSS (2.0)";
 exports.file = "/RSS_Example.xml";
 exports.expected = {
@@ -32,3 +33,5 @@ exports.expected = {
 		pubDate: new Date("Tue, 20 May 2003 08:56:02 GMT")
 	}]
 };
+
+return module.exports;});

@@ -1,4 +1,5 @@
-var htmlparser2 = require(".."),
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var htmlparser2 = require("htmlparser2"),
     assert = require("assert");
 
 describe("WritableStream", function(){
@@ -19,3 +20,5 @@ describe("WritableStream", function(){
 		assert(processed);
 	});
 });
+
+return module.exports;});

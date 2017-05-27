@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var htmlparser2 = require(".."),
     fs = require("fs"),
     path = require("path"),
@@ -81,3 +82,5 @@ exports.mochaTest = function(name, root, test){
 		});
 	}
 };
+
+return module.exports;});

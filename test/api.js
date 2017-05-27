@@ -1,14 +1,15 @@
-var htmlparser2 = require(".."),
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var htmlparser2 = require("htmlparser2"),
     assert = require("assert");
 
 describe("API", function(){
 
 	it("should load all modules", function(){
-		var Stream = require("../lib/Stream.js");
+		var Stream = require("htmlparser2/lib/Stream.js");
 		assert.strictEqual(htmlparser2.Stream, Stream, "should load module");
 		assert.strictEqual(htmlparser2.Stream, Stream, "should load it again (cache)");
 
-		var ProxyHandler = require("../lib/ProxyHandler.js");
+		var ProxyHandler = require("htmlparser2/lib/ProxyHandler.js");
 		assert.strictEqual(htmlparser2.ProxyHandler, ProxyHandler, "should load module");
 		assert.strictEqual(htmlparser2.ProxyHandler, ProxyHandler, "should load it again (cache)");
 	});
@@ -101,3 +102,5 @@ describe("API", function(){
 		p.done();
 	});
 });
+
+return module.exports;});

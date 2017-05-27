@@ -1,4 +1,5 @@
-var helper = require("./test-helper.js"),
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var helper = require("htmlparser2/test-helper.js"),
     Stream = require("..").WritableStream,
     fs = require("fs"),
     path = require("path");
@@ -21,3 +22,5 @@ helper.mochaTest("Stream", __dirname, function(test, cb){
 		), test.options)
 	).on("error", cb);
 });
+
+return module.exports;});

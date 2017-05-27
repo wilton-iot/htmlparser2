@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 exports.name = "Atom (1.0)";
 exports.file = "/Atom_Example.xml";
 exports.expected = {
@@ -16,3 +17,5 @@ exports.expected = {
 		pubDate: new Date("2003-12-13T18:30:02Z")
 	}]
 };
+
+return module.exports;});
