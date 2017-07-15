@@ -52,5 +52,10 @@
   "browser": {
     "readable-stream": false
   },
-  "license": "MIT"
+  "license": "MIT",
+  "wilton": {
+    "excludes": [
+      "test"
+    ]
+  }
 }
