@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 var helper = require("htmlparser2/test-helper.js"),
     Stream = require("..").WritableStream,
     fs = require("fs"),
@@ -23,4 +23,4 @@ helper.mochaTest("Stream", __dirname, function(test, cb){
 	).on("error", cb);
 });
 
-return module.exports;});
+require = requireOrig;});
